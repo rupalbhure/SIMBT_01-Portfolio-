@@ -1,0 +1,119 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.hero{
+    width: 100%;
+    height: 100vh;
+    /* background: url(img/bg1.jpg); */
+    background-size: cover;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 100px;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+nav ul li a{
+    color: white;
+    position: relative;
+    padding: 5px 0;
+}
+nav ul li a:hover{
+    color: rgb(248, 23, 147);
+}
+nav ul li a:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: rgb(244, 7, 122);
+    transition: .3s;
+    bottom: 0;
+}
+nav ul li a:hover:after{
+    width: 100%;
+}
+.btn{
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 16px 40px;
+    border-radius: 500px;
+    display: inline-block;
+    font-weight: 500;
+    transition: all .4s ease-in-out;
+    background-size: 152% 100%;
+    background: rgb(32, 206, 165);
+    border: 2px solid rgb(240, 18, 107);
+}
+.btn:hover{
+    background: transparent;
+    border-color: rgb(240, 17, 177);
+    color: rgb(225, 7, 105);
+}
+.content{
+    position: absolute;
+    top: 25%;
+    left: 8%;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content .title{
+    color: #1f1f25;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    display: inline-block;
+    margin-bottom: 10px;
+    background: linear-gradient(120deg, #55aef7 20.69%, rgb(247, 126, 247) 50.19%,#fd4766 79.69%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.content h1{
+    color: white;
+    font-size: 50px;
+    font-weight: 800;
+    line-height: 1.25;
+    text-transform: inherit;
+    width: 70%;
+}
+.content h1 span{
+    color: rgb(222, 12, 128);
+}
+.content p{
+    width: 55%;
+    color: rgb(246, 247, 247);
+    margin-top: 25px;
+    margin-bottom: 30px;
+    font-family: 'Lora', serif;
+}
+.me{
+    margin-right: 10rem;
+    border-radius: 25%; 
+    height :25rem;
+    width :20 rem;
+}
+body{
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url("https://images.unsplash.com/photo-1582738411706-bfc8e691d1c2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80");
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
